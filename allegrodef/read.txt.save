@@ -1,0 +1,6 @@
+
+making a build with allegro:
+g++ source.cpp -o name -l alleg
+
+source:
+http://www.cppgameprogramming.com/cgi/nav.cgi?page=allegfiles
