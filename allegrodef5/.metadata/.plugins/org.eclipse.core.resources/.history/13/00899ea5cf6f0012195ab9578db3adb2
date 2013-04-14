@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <allegro5/allegro.h>
+#include <allegro5/allegro_image.h>
+
+void init(){
+	ALLEGRO_DISPLAY *display = NULL;
+	ALLEGRO_BITMAP *image = NULL;
+	if(!al_init()){
+		fprintf(stderr, "failed to start allegro!\n");
+		exit(EXIT_FAILURE);
+	}
+	if(!al_init_image_addon()){
+		fprintf(stderr, "failed to init image addon.\n");
+		exit(EXIT_FAILURE);
+	}
+}
+void gameloop(){}
+void cleanUp(){}
+
+int main(void){
+	init();
+	return 0;
+}

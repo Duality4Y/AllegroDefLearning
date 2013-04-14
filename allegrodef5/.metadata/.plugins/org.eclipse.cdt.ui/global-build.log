@@ -1,0 +1,22 @@
+22:50:28 **** Incremental Build of configuration Release for project AllegroFirst ****
+make all 
+Building target: AllegroFirst
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "AllegroFirst"  ./main.o   -lalleg\ -lm -lallegro-5.0\ -lm -l\ allegro_image-5.0\ -lm -l\ allegro_primitives-5.0\ -lm
+/usr/bin/ld: cannot find -lalleg -lm
+/usr/bin/ld: cannot find -lallegro-5.0 -lm
+/usr/bin/ld: cannot find -l allegro_image-5.0 -lm
+/usr/bin/ld: cannot find -l allegro_primitives-5.0 -lm
+collect2: ld returned 1 exit status
+make: *** [AllegroFirst] Error 1
+22:50:32 **** Incremental Build of configuration Release for project AllegroFirst ****
+make all 
+Building target: AllegroFirst
+Invoking: GCC C++ Linker
+g++ -L/usr/local/lib -o "AllegroFirst"  ./main.o   -lalleg\ -lm -lallegro-5.0\ -lm -l\ allegro_image-5.0\ -lm -l\ allegro_primitives-5.0\ -lm
+/usr/bin/ld: cannot find -lalleg -lm
+/usr/bin/ld: cannot find -lallegro-5.0 -lm
+/usr/bin/ld: cannot find -l allegro_image-5.0 -lm
+/usr/bin/ld: cannot find -l allegro_primitives-5.0 -lm
+collect2: ld returned 1 exit status
+make: *** [AllegroFirst] Error 1

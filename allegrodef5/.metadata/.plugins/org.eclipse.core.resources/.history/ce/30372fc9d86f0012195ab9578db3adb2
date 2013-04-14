@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "allegro5/allegro.h"
+#include "allegro5/allegro_image.h"
+
+ALLEGRO_DISPLAY *display = NULL;
+ALLEGRO_BITMAP *image = NULL;
+
+void init(){
+	if(!al_init()){
+		fprintf(stderr, "failed to start allegro!\n");
+		exit(EXIT_FAILURE);
+	}
+	if(!al_init_image_addon()){
+		fprintf(stderr, "failed to init image addon.\n");
+		exit(EXIT_FAILURE);
+	}
+	display = al_create_display(512,512);
+	if(!display){
+		fprintf(stderr, "failed to create a display \n");
+		exit(EXIT_FAILURE);
+	}
+	image = al_load_bitmap("StarfieldTileAble.png");
+	if(!image){
+		fprintf(stderr,"failed to load image\n");
+		al_destroy_display(display);
+		exit(EXIT_FAILURE);
+	}
+}
+void gameloop(){
+	al_draw_bitmap(image,0,0,0);
+	al_flip_display();
+	al_rest(2);
+}
+void cleanUp(){
+	al_destroy_display(display);
+	al_destroy_bitmap(image);
+}
+
+int main(void){
+	init();
+	return 0;
+}

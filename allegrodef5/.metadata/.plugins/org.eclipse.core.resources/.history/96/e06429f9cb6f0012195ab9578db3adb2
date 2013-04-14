@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <allegro5/allegro.h>
+#include <allegro5/allegro_image.h>
+
+void init(){
+
+}
+void gameloop(){}
+void cleanUp(){}
+
+int main(void){
+	init();
+	return 0;
+}
